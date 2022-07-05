@@ -1,0 +1,11 @@
+package com.service;
+
+import java.util.List;
+
+import com.modal.BranchMaster;
+
+public interface BankService {
+	
+	public abstract String createBankAndAccounts(BranchMaster branchMaster);
+	public abstract List<BranchMaster> readAllBankBranchDetails();
+}

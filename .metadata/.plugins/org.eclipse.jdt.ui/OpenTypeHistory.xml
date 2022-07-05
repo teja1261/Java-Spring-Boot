@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=demo1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{CalculatorService.java[CalculatorService" modifiers="513" timestamp="1652776813005"/>
+    <typeInfo handle="=collectionpractise/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{ReadDeptService.java[ReadDeptService" modifiers="513" timestamp="1652874970788"/>
+    <typeInfo handle="=collectionpractise/D:\/Java\/eclipse\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\/jre\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/16\/docs\/api\/=/&lt;java.lang(Readable.class[Readable" modifiers="1537" timestamp="1622184128000"/>
+    <typeInfo handle="=loggingandtree/D:\/Java\/eclipse\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\/jre\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/16\/docs\/api\/=/&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1622184128000"/>
+    <typeInfo handle="=java8_features/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{InterfaceOne.java[InterfaceOne" modifiers="513" timestamp="1653305925536"/>
+    <typeInfo handle="=jdbcdemo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dao{UserDao.java[UserDao" modifiers="513" timestamp="1653990167031"/>
+    <typeInfo handle="=springcrudop/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.service{BankService.java[BankService" modifiers="513" timestamp="1654600649572"/>
+</typeInfoHistroy>

@@ -1,0 +1,53 @@
+package com.service;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.modal.AccountMaster;
+import com.modal.BranchMaster;
+import com.modal.CustomerMaster;
+
+@Service
+public class BankServiceImpl implements BankService {
+
+	public List<BranchMaster> init() {
+
+		CustomerMaster customerMaster1 = new CustomerMaster(1001, "Teja Narendra", "Vinukonda", 1111111111L,
+				new Date());
+		CustomerMaster customerMaster2 = new CustomerMaster(1002, "Srividya Narendra", "Vinukonda", 2222222222L,
+				new Date());
+		CustomerMaster customerMaster3 = new CustomerMaster(1003, "Srividya Narendra", "Vinukonda", 2222222222L,
+				new Date());
+		CustomerMaster customerMaster4 = new CustomerMaster(1004, "Teja Narendra", "Vinukonda", 1111111111L,
+				new Date());
+
+		List<AccountMaster> accountSbi = new ArrayList<AccountMaster>();
+		accountSbi.add(new AccountMaster("SBIN001", 30000.900f, "Saving Account", customerMaster1));
+		accountSbi.add(new AccountMaster("SBIN002", 40000.600f, "Saving Account", customerMaster3));
+
+		List<AccountMaster> accountHdfc = new ArrayList<AccountMaster>();
+		accountHdfc.add(new AccountMaster("HDFC001", 25000.520f, "Salary Account", customerMaster2));
+		accountHdfc.add(new AccountMaster("HDFC002", 25000.560f, "Salary Account", customerMaster4));
+
+		List<BranchMaster> branchMasters = new ArrayList<BranchMaster>();
+
+		branchMasters.add(new BranchMaster("SBI-Vinukonda", "SBI", "Vinukonda", accountSbi));
+		branchMasters.add(new BranchMaster("HDFC-Vinukonda", "HDFC", "Vinukonda", accountHdfc));
+
+		return branchMasters;
+	}
+
+	@Override
+	public BranchMaster createBankAndAccounts(BranchMaster branchMaster) {
+		return null;
+	}
+
+	@Override
+	public List<BranchMaster> readAllBankBranchDetails() {
+		return this.init();
+	}
+
+}

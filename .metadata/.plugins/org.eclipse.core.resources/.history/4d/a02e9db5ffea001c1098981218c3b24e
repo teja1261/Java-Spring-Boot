@@ -1,0 +1,31 @@
+package com.sbdatajpa.controller;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.sbdatajpa.modal.Department;
+import com.sbdatajpa.repository.DepartmentRespository;
+
+
+@RestController
+@RequestMapping(value = "/dept")
+public class DepartmentController {
+
+	@Autowired
+	private DepartmentRespository departmentRespository;
+
+	@GetMapping(value = "/getdepartid/{id}")
+	public Department readDepartmentById(@PathVariable("id") int deptId){
+		Optional<Department> optional= this.departmentRespository.findById(deptId);
+		Department tempDepart = null;
+		if(optional.isPresent()){
+		tempDepart = optional.get();
+		}
+		return tempDepart;
+	}
+
+}

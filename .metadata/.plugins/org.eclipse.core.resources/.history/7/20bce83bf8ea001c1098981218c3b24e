@@ -1,0 +1,5 @@
+package com.sbdatajpa.modal;
+
+public class Department {
+
+}

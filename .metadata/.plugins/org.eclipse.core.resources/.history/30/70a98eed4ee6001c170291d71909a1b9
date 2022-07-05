@@ -1,0 +1,29 @@
+package com.modal;
+
+import java.util.Date;
+
+public class CustomerMaster {
+
+	private int customerNo;
+	private String customerName;
+	private String customerCity;
+	private long customerContactNo;
+	private Date customerDob;
+
+	public CustomerMaster() {
+		super();
+	}
+
+	public CustomerMaster(int customerNo, String customerName, String customerCity, long customerContactNo,
+			Date customerDob) {
+		super();
+		this.customerNo = customerNo;
+		this.customerName = customerName;
+		this.customerCity = customerCity;
+		this.customerContactNo = customerContactNo;
+		this.customerDob = customerDob;
+	}
+	
+	
+
+}

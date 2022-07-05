@@ -1,0 +1,12 @@
+package com.modal;
+
+import java.util.List;
+
+public class BankBranchMaster {
+	
+	private String branchId;
+	private String branchName;
+	private String branchCity;
+	private List<AccountMaster> accountMasters;
+
+}

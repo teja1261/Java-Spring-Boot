@@ -1,0 +1,40 @@
+package com.stg.leave.service.impl;
+
+import com.stg.leave.entity.Holidays;
+import com.stg.leave.repository.HolidaysRepository;
+import com.stg.leave.service.HolidaysService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.sql.Date;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+public class HolidaysServiceImpl implements HolidaysService {
+
+	@Autowired
+	private HolidaysRepository holidaysRepository;
+
+	@Override
+	public Holidays saveHolidays(Holidays holidays) {
+		return holidaysRepository.save(holidays);
+	}
+
+	@Override
+	public List<Holidays> getAllHolidays() {
+		Long milliSec = System.currentTimeMillis();
+		Date todayDate = new Date(milliSec);
+		List<Holidays> holidaysList1 = holidaysRepository.findAll();
+		List<Holidays> holidaysList = new ArrayList<>();
+		for (Holidays i : holidaysList1) {
+			// LocalDate date=i.getDate();
+			if (todayDate.toLocalDate().getYear() == i.getDate().getYear()) {
+				holidaysList.add(i);
+			}
+		}
+		return holidaysList;
+	}
+
+}

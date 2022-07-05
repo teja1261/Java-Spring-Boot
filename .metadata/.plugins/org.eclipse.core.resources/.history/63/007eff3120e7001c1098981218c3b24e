@@ -1,0 +1,17 @@
+package com.stg;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+
+@SpringBootApplication
+//@EnableSwagger2
+//@SwaggerDefinition
+public class SpbootdemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpbootdemoApplication.class, args);
+	}
+
+}

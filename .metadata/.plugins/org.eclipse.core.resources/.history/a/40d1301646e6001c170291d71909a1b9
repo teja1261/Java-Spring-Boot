@@ -1,0 +1,8 @@
+package com.service;
+
+import com.modal.BranchMaster;
+
+public interface BankService {
+	
+	public abstract String createBankAndAccounts(BranchMaster branchMaster);
+}

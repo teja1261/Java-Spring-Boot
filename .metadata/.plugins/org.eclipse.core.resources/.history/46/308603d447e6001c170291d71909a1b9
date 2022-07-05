@@ -1,0 +1,21 @@
+package com.service;
+
+import java.util.List;
+
+import com.modal.BranchMaster;
+
+public class BankServiceImpl implements BankService {
+
+	@Override
+	public BranchMaster createBankAndAccounts(BranchMaster branchMaster) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<BranchMaster> readAllBankBranchDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

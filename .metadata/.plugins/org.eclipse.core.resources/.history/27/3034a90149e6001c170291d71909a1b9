@@ -1,0 +1,24 @@
+package com.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.modal.BranchMaster;
+
+@Service
+public class BankServiceImpl implements BankService {
+
+	@Override
+	public BranchMaster createBankAndAccounts(BranchMaster branchMaster) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<BranchMaster> readAllBankBranchDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

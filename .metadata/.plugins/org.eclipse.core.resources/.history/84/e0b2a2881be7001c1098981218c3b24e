@@ -1,0 +1,14 @@
+package com.stg;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+public class SpbootdemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpbootdemoApplication.class, args);
+	}
+
+}

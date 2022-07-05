@@ -1,0 +1,7 @@
+127.0.0.1 - - [06/Jun/2022:14:36:48 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:14:36:49 +0530] "GET /springrestfull/WEB-INF/classes/com/controller/MainController.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:14:37:04 +0530] "GET /springrestfull/getEmployee HTTP/1.1" 200 70
+127.0.0.1 - - [06/Jun/2022:14:38:48 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:14:38:48 +0530] "GET /springrestfull/WEB-INF/classes/com/controller/MainController.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:14:39:18 +0530] "GET /springrestfull/getEmployee HTTP/1.1" 200 70
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:14:39:18 +0530] "GET /favicon.ico HTTP/1.1" 404 762

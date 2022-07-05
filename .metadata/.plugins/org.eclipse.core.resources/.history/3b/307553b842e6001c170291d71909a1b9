@@ -1,0 +1,10 @@
+package com.modal;
+
+public class AccountMaster {
+	
+	private String accountNo;
+	private float openingBalance;
+	private String accountType;
+	private CustomerMaster customerMaster;
+
+}

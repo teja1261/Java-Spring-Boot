@@ -1,0 +1,11 @@
+package com.stg.leave.service;
+
+import com.stg.leave.entity.Holidays;
+
+import java.util.List;
+
+public interface HolidaysService {
+	Holidays saveHolidays(Holidays holidays);
+
+	List<Holidays> getAllHolidays();
+}
